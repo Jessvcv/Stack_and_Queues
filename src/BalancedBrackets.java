@@ -19,7 +19,7 @@ public class BalancedBrackets {
                 }
 
                 // Pop from the stack and check if it matches the closing bracket
-                char top = stack.removeLast(); // Pop the last element
+                char top = stack.pop(); // Pop the last element
                 if ((c == ')' && top != '(') ||
                         (c == '}' && top != '{') ||
                         (c == ']' && top != '[')) {
